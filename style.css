@@ -36,6 +36,9 @@ h2 {
   left: -6rem;
   margin: 1rem auto 2rem;
 }
+.navbar-nav .dropdown-menu-2{
+  left: -2rem;
+}
 
 /* PROGRAM A HOLTER - PAGE and APPLY PAGE */
 .recorder-img-container {
