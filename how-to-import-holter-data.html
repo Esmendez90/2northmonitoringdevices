@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Apply a Holter Monitor</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./" w-10>
+            <img
+              src="./images/ekgwave.jpg"
+              style="width: 100%; border-radius: 50%"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./how-to-program-holter-monitor.html"
+                >How to program a holter monitor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="./how-to-apply-holter-monitor.html"
+                >How to apply a holter monitor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./how-to-import-holter-data.html"
+                >How to import Holter data</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- End of Navbar -->
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1>Guide to Import Holter Data From a Recorder</h1>
+        <h6 class="card-title">
+          This page is a guideline only to be used as an aid to comprehensive
+          training. These guidelines are not meant to replace applicable user
+          manuals.
+        </h6>
+      </div>
+    </header>
+    <!-- End of header -->
+
+    <!-- Main content -->
+    <main class="main import-monitor-instr-page">
+      <div class="container">
+        <h5 class="card-title">IMPORTING HOLTER DATA FROM RECORDER</h5>
+        <div class="recorder-img-container">
+          <img src="./images/import-recording.jpg" alt="icon" />
+        </div>
+        <ul>
+          <li>Remove and discard AAA battery.</li>
+          <li>Connect H3+ Holter recorder to USB download cable.</li>
+          <li>
+            Select <strong>Import Recording</strong> icon to import Holter data
+            from recorder.
+          </li>
+          <li>
+            In the top section of the Import Recording window, the recorder
+            status will display <strong>Completed</strong>.
+          </li>
+          <li>
+            In the <strong>All Scheduled</strong> tab, select the patient that
+            you are attaching the recording to and click the
+            <strong>Acquire Recorder/Card</strong> button.
+          </li>
+          <li>
+            The <strong>Recording Information</strong> screen will appear: click
+            <strong>Start</strong> to begin the Holter data acquisition or click
+            <strong>Scan Criteria</strong> to adjust settings as needed, and
+            then click the Start button.
+          </li>
+          <li>
+            Data acquisition will take a few minutes to complete. Please, be
+            patient.
+          </li>
+          <li>
+            Once acquisition has completed, you can add, edit or delete Diary
+            Events or simply click on the <strong>Exit</strong> button.
+          </li>
+          <li>
+            The study will automatically open for the reading technician to
+            review. If you do not need to review the study, you can simply exit
+            by click on the <strong>X</strong> button at the top right corner.
+          </li>
+          <li>The recorded can now be disconnected from the USB cable.</li>
+        </ul>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

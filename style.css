@@ -34,7 +34,7 @@ h2 {
   position: relative;
   top: 24px;
   left: -6rem;
-  margin: 4rem auto 3rem;
+  margin: 1rem auto 2rem;
 }
 
 /* PROGRAM A HOLTER - PAGE and APPLY PAGE */
@@ -57,6 +57,9 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) {
+  .navbar-nav .dropdown-menu {
+    margin: 1rem 1rem 2rem;
+  }
   .card {
     width: 100% !important;
     display: grid;
@@ -68,5 +71,11 @@ h2 {
     width: 45%;;
     display: block;
     margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .navbar-nav .dropdown-menu {
+    margin: 1rem 1rem 2rem 2rem;
   }
 }
