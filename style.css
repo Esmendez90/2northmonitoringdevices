@@ -1,0 +1,72 @@
+.navbar-brand {
+  width: 12%;
+}
+header,
+main {
+  padding: 1rem;
+}
+header {
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 2rem;
+}
+.device {
+  margin: 2rem auto 4rem;
+}
+.card {
+  width: 100% !important;
+}
+h2 {
+  margin: 1rem auto;
+  text-align: center;
+}
+.accordion-header {
+  margin: auto;
+}
+.accordion-button {
+  padding: 20px 5px;
+}
+.nav-item {
+  display: inline-flex;
+}
+.navbar-nav .dropdown-menu {
+  position: relative;
+  top: 24px;
+  left: -6rem;
+  margin: 4rem auto 3rem;
+}
+
+/* PROGRAM A HOLTER - PAGE and APPLY PAGE */
+.recorder-img-container {
+  width: 40%;
+  margin: 2rem auto;
+}
+.recorder-img-container img, .lead-placement-img-container img {
+  width: 100%;
+}
+.program-monitor-instr-page h5,.apply-monitor-instr-page h5, .import-monitor-instr-page h5 {
+  margin: 2rem auto 3rem;
+  text-align: center;
+}
+.program-monitor-instr-page li, .apply-monitor-instr-page li, .import-monitor-instr-page li {
+  margin-bottom: 12px;
+}
+.lead-placement-img-container {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 100% !important;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .recorder-img-container img, .lead-placement-img-container img {
+    width: 45%;;
+    display: block;
+    margin: auto;
+  }
+}
