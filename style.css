@@ -45,7 +45,7 @@ h2 {
 .recorder-img-container img, .lead-placement-img-container img {
   width: 100%;
 }
-.program-monitor-instr-page h5,.apply-monitor-instr-page h5, .import-monitor-instr-page h5 {
+.program-monitor-instr-page h5,.apply-monitor-instr-page h5, .import-monitor-instr-page h5, .zioat-instr-page h5 {
   margin: 2rem auto 3rem;
   text-align: center;
 }
@@ -55,7 +55,11 @@ h2 {
 .lead-placement-img-container {
   margin-bottom: 3rem;
 }
-
+video {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
 @media only screen and (min-width: 768px) {
   .navbar-nav .dropdown-menu {
     margin: 1rem 1rem 2rem;
@@ -77,5 +81,8 @@ h2 {
 @media only screen and (min-width: 1000px) {
   .navbar-nav .dropdown-menu {
     margin: 1rem 1rem 2rem 2rem;
+  }
+  video {
+    width: 70%;
   }
 }
