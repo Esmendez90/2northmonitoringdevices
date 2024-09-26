@@ -36,7 +36,7 @@ h2 {
   left: -6rem;
   margin: 1rem auto 2rem;
 }
-.navbar-nav .dropdown-menu-2, .navbar-nav .dropdown-menu-3{
+.navbar-nav .dropdown-menu-2, .navbar-nav .dropdown-menu-3, .navbar-nav .dropdown-menu-4, .navbar-nav .dropdown-menu-5{
   left: -2rem;
 }
 
@@ -48,7 +48,7 @@ h2 {
 .recorder-img-container img, .lead-placement-img-container img {
   width: 100%;
 }
-.program-monitor-instr-page h5,.apply-monitor-instr-page h5, .import-monitor-instr-page h5, .zioat-instr-page h5, .epatch-instr-page h5 {
+.program-monitor-instr-page h5,.apply-monitor-instr-page h5, .import-monitor-instr-page h5, .zioat-instr-page h5, .zio-instr-page h5, .epatch-instr-page h5, .mct-instr-page h5 {
   margin: 2rem auto 3rem;
   text-align: center;
 }
@@ -83,6 +83,12 @@ iframe {
     display: block;
     margin: auto;
   }
+  iframe{
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -91,5 +97,9 @@ iframe {
   }
   video {
     width: 70%;
+  }
+  iframe{
+    width: 90%;
+    height: 500px;
   }
 }
