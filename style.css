@@ -85,6 +85,18 @@ iframe {
   width: 100%;
   height: 285px;
 }
+.mcot {
+  position: relative;
+}
+.alert{
+  position: absolute;
+  top: 1px;
+  z-index: 1;
+  background-color: red;
+  color: white;
+  font-size: 13px;
+  padding: 10px;
+}
 @media only screen and (min-width: 768px) {
   .navbar-brand {
     width: 7%;
