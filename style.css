@@ -36,8 +36,17 @@ h2 {
   left: -6rem;
   margin: 1rem auto 2rem;
 }
-.navbar-nav .dropdown-menu-2, .navbar-nav .dropdown-menu-3, .navbar-nav .dropdown-menu-4, .navbar-nav .dropdown-menu-5{
+.navbar-nav .dropdown-menu-2,
+.navbar-nav .dropdown-menu-3,
+.navbar-nav .dropdown-menu-4,
+.navbar-nav .dropdown-menu-5 {
   left: -2rem;
+}
+
+.device-description {
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
 }
 
 /* PROGRAM A HOLTER - PAGE and APPLY PAGE */
@@ -45,14 +54,23 @@ h2 {
   width: 40%;
   margin: 2rem auto;
 }
-.recorder-img-container img, .lead-placement-img-container img {
+.recorder-img-container img,
+.lead-placement-img-container img {
   width: 100%;
 }
-.program-monitor-instr-page h5,.apply-monitor-instr-page h5, .import-monitor-instr-page h5, .zioat-instr-page h5, .zio-instr-page h5, .epatch-instr-page h5, .mct-instr-page h5 {
+.program-monitor-instr-page h5,
+.apply-monitor-instr-page h5,
+.import-monitor-instr-page h5,
+.zioat-instr-page h5,
+.zio-instr-page h5,
+.epatch-instr-page h5,
+.mct-instr-page h5 {
   margin: 2rem auto 3rem;
   text-align: center;
 }
-.program-monitor-instr-page li, .apply-monitor-instr-page li, .import-monitor-instr-page li {
+.program-monitor-instr-page li,
+.apply-monitor-instr-page li,
+.import-monitor-instr-page li {
   margin-bottom: 12px;
 }
 .lead-placement-img-container {
@@ -68,6 +86,9 @@ iframe {
   height: 285px;
 }
 @media only screen and (min-width: 768px) {
+  .navbar-brand {
+    width: 7%;
+  }
   .navbar-nav .dropdown-menu {
     margin: 1rem 1rem 2rem;
   }
@@ -78,12 +99,13 @@ iframe {
     justify-content: center;
     align-items: center;
   }
-  .recorder-img-container img, .lead-placement-img-container img {
-    width: 45%;;
+  .recorder-img-container img,
+  .lead-placement-img-container img {
+    width: 45%;
     display: block;
     margin: auto;
   }
-  iframe{
+  iframe {
     width: 80%;
     height: 350px;
     margin: auto;
@@ -92,13 +114,19 @@ iframe {
 }
 
 @media only screen and (min-width: 1000px) {
+  .navbar-brand {
+    width: 5%;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 8px;
+  }
   .navbar-nav .dropdown-menu {
     margin: 1rem 1rem 2rem 2rem;
   }
   video {
     width: 70%;
   }
-  iframe{
+  iframe {
     width: 90%;
     height: 500px;
   }

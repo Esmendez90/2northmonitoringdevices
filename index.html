@@ -155,9 +155,9 @@
         <h1>Cardiac Monitoring Devices Guide</h1>
         <h6 class="card-title">
           This site provides quick access to information on cardiac monitors,
-          including device types, EPIC ordering codes, and wear times. It's a
-          convenient resource to streamline workflows and reduce the need for
-          printed materials.
+          including device types, EPIC ordering codes, wear times, and
+          educational information. It is intended for in-clinic staff only and
+          does not replace any official manuals provided by the manufacturers.
         </h6>
       </div>
     </header>
@@ -169,28 +169,20 @@
         <!-- Traditional Holter Container -->
         <div class="holter-container">
           <h2>Traditional Holter Monitor</h2>
+          <p class="device-description">
+            <strong>Description:</strong> It is a portable device that
+            continuously records a patient’s heart activity (ECG) over a 24 or
+            48-hour period.
+          </p>
           <div id="holter" class="device holter">
             <div class="card" style="width: 18rem">
               <img src="./images/holter.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Mortara Holter Monitor</h5>
-                <h6 class="card-title">Quick Tips:</h6>
-                <ul>
-                  <li class="card-text">
-                    Patient cannot shower while wearing this device.
-                  </li>
-                  <li class="card-text">
-                    Patient responsible for returning device to clinic.
-                  </li>
-                  <li class="card-text">Contact us for device availability.</li>
-                  <li class="card-text">Data is analyzed in clinic.</li>
-                  <li class="card-text">
-                    Device can be worn for 24 or 48 hours.
-                  </li>
-                </ul>
-
+           
                 <!-- Accordion -->
                 <div class="accordion" id="accordionExample">
+                  <!-- item 1 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
@@ -201,7 +193,7 @@
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        <h6 class="card-title">For Physicians</h6>
+                        <h6 class="card-title">Quick Tips</h6>
                       </button>
                     </h2>
                     <div
@@ -210,14 +202,25 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                        <h6 class="card-title">Epic Ordering Codes:</h6>
+                       
                         <ul>
-                          <li><strong>CAR02</strong>: 24 Hours</li>
-                          <li><strong>CAR03</strong>: 48 Hours</li>
+                          <li class="card-text">
+                            Patient cannot shower while wearing this device.
+                          </li>
+                          <li class="card-text">
+                            Patient responsible for returning device to clinic.
+                          </li>
+                          <li class="card-text">Contact us for device availability.</li>
+                          <li class="card-text">Data is analyzed in clinic.</li>
+                          <li class="card-text">
+                            Device can be worn for 24 or 48 hours.
+                          </li>
                         </ul>
                       </div>
                     </div>
                   </div>
+
+
                   <!-- item 2 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -229,11 +232,39 @@
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        <h6 class="card-title">For Technicians</h6>
+                        <h6 class="card-title">For Physicians</h6>
                       </button>
                     </h2>
                     <div
                       id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <h6 class="card-title">Epic Ordering Codes:</h6>
+                        <ul>
+                          <li><strong>CAR02</strong>: 24 Hours</li>
+                          <li><strong>CAR03</strong>: 48 Hours</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item 3 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <h6 class="card-title">For Technicians</h6>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
                       class="accordion-collapse collapse"
                       data-bs-parent="#accordionExample"
                     >
@@ -264,46 +295,80 @@
             </div>
           </div>
         </div>
+
         <!-- Extended Monitoring containers -->
         <!-- Zio patch container -->
         <div class="extended-monitoring-container">
           <h2>Extended Monitoring Devices</h2>
+          <p class="device-description">
+            <strong>Description: </strong>It is a small, discreet wearable
+            device that continuously monitors heart activity (ECG) for up to 14
+            days. Patients can go about their daily activities while wearing the
+            patch. After the wear period, the patch is returned for analysis,
+            providing comprehensive data to assist in diagnosing heart
+            conditions.
+          </p>
+
           <div id="zio" class="device ziopatch">
             <div class="card" style="width: 18rem">
               <img src="./images/zio.webp" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Zio Patch</h5>
                 <h6 class="card-title">Manufacturer: iRhythm Technologies</h6>
-                <h6 class="card-title">Quick Tips:</h6>
-                <ul>
-                  <li>Single patch.</li>
-                  <li>Quick showers are allowed. No baths.</li>
-                  <li>USPS Prepaid/preaddressed return packaging provided.</li>
-                  <li>Device returns to iRhythm.</li>
-                  <li>Data is analyzed by iRhythm.</li>
-                  <li>Device can be mailed to patient's home.</li>
-                  <li>Device can be worn up to 14 days.</li>
-                </ul>
+          
 
                 <!-- Accordion -->
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="accordionExample1">
+                    <!-- item 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="true"
+                          aria-controls="collapseFour"
+                        >
+                          <h6 class="card-title">Quick Tips</h6>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample1"
+                      >
+                        <div class="accordion-body">
+                          <ul>
+                            <li>Single patch.</li>
+                            <li>Quick showers are allowed. No baths.</li>
+                            <li>USPS Prepaid/preaddressed return packaging provided.</li>
+                            <li>Device returns to iRhythm.</li>
+                            <li>Data is analyzed by iRhythm.</li>
+                            <li>Device can be mailed to patient's home.</li>
+                            <li>Device can be worn up to 14 days.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- item 2 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
-                        class="accordion-button"
+                        class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="true"
-                        aria-controls="collapseThree"
+                        data-bs-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
                       >
                         <h6 class="card-title">For Physicians</h6>
                       </button>
                     </h2>
                     <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse show"
-                      data-bs-parent="#accordionExample"
+                      id="collapseFive"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample1"
                     >
                       <div class="accordion-body">
                         <h6 class="card-title">Epic Ordering Codes:</h6>
@@ -317,23 +382,24 @@
                       </div>
                     </div>
                   </div>
+                  <!-- item 3 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
+                        data-bs-target="#collapseSix"
                         aria-expanded="false"
-                        aria-controls="collapseFour"
+                        aria-controls="collapseSix"
                       >
                         <h6 class="card-title">For Technicians</h6>
                       </button>
                     </h2>
                     <div
-                      id="collapseFour"
+                      id="collapseSix"
                       class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
+                      data-bs-parent="#accordionExample1"
                     >
                       <div class="accordion-body">
                         <a href="./zio-application.html"
@@ -358,36 +424,60 @@
               <div class="card-body">
                 <h5 class="card-title">E-Patch (Philips Extended Holter)</h5>
                 <h6 class="card-title">Manufacturer: Biotel Heart</h6>
-                <h6 class="card-title">Quick Tips:</h6>
-                <ul>
-                  <li>Multiple patches.</li>
-                  <li>Quick showers are allowed. No baths.</li>
-                  <li>UPS Prepaid/preaddressed return packaging provided.</li>
-                  <li>Device returns to Philips (Biotel Heart).</li>
-                  <li>Data is analyzed by Philips (Biotel Heart).</li>
-                  <li>Device can be mailed to patient's home.</li>
-                  <li>Device can be worn up to 14 days.</li>
-                </ul>
+            
 
                 <!-- Accordion -->
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="accordionExample2">
+                  <!-- item 1 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
                         class="accordion-button"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive"
+                        data-bs-target="#collapseSeven"
                         aria-expanded="true"
-                        aria-controls="collapseFive"
+                        aria-controls="collapseSeven"
+                      >
+                        <h6 class="card-title">Quick Tips</h6>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseSeven"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample2"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li>Multiple patches.</li>
+                          <li>Quick showers are allowed. No baths.</li>
+                          <li>UPS Prepaid/preaddressed return packaging provided.</li>
+                          <li>Device returns to Philips (Biotel Heart).</li>
+                          <li>Data is analyzed by Philips (Biotel Heart).</li>
+                          <li>Device can be mailed to patient's home.</li>
+                          <li>Device can be worn up to 14 days.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight"
+                        aria-expanded="false"
+                        aria-controls="collapseEight"
                       >
                         <h6 class="card-title">For Physicians</h6>
                       </button>
                     </h2>
                     <div
-                      id="collapseFive"
-                      class="accordion-collapse collapse show"
-                      data-bs-parent="#accordionExample"
+                      id="collapseEight"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample2"
                     >
                       <div class="accordion-body">
                         <h6 class="card-title">Epic Ordering Codes:</h6>
@@ -401,23 +491,24 @@
                       </div>
                     </div>
                   </div>
+                  <!-- item 3 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseSix"
+                        data-bs-target="#collapseNine"
                         aria-expanded="false"
-                        aria-controls="collapseSix"
+                        aria-controls="collapseNine"
                       >
                         <h6 class="card-title">For Technicians</h6>
                       </button>
                     </h2>
                     <div
-                      id="collapseSix"
+                      id="collapseNine"
                       class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
+                      data-bs-parent="#accordionExample2"
                     >
                       <div class="accordion-body">
                         <a href="./epatch-application.html"
@@ -440,6 +531,13 @@
         <!-- Event monitoring devices-->
         <div class="event-monitors">
           <h2>Continuous Monitoring Devices</h2>
+          <p class="device-description">
+            <strong>Description: </strong>It is an advanced wearable cardiac
+            monitor that tracks heart activity (ECG) for up to 14 days (or 30 days).
+            It transmits data periodically via a cellular connection, allowing
+            for timely detection of irregular heart rhythms, such as
+            arrhythmias. Patients can wear the patch during normal activities.
+          </p>
           <!-- Zio AT patch container -->
           <div id="zioat" class="device zioat">
             <div class="card" style="width: 18rem">
@@ -447,37 +545,61 @@
               <div class="card-body">
                 <h5 class="card-title">Zio AT</h5>
                 <h6 class="card-title">Manufacturer: iRhythm Technologies</h6>
-                <h6 class="card-title">Quick Tips:</h6>
-                <ul>
-                  <li>Single patch.</li>
-                  <li>Quick showers allowed. No baths.</li>
-                  <li>USPS Prepaid/preaddressed return packaging provided.</li>
-                  <li>Device returns to iRhythm.</li>
-                  <li>Data is analyzed by iRhythm.</li>
-                  <li>Device can be mailed to patient's home.</li>
-                  <li>Gateway is used for data transmission.</li>
-                  <li>Device can be worn up to 14 days.</li>
-                </ul>
+          
 
                 <!-- Accordion -->
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="accordionExample3">
+                  <!-- item 1 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
                         class="accordion-button"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseSeven"
+                        data-bs-target="#collapseTen"
                         aria-expanded="true"
-                        aria-controls="collapseSeven"
+                        aria-controls="collapseTen"
+                      >
+                        <h6 class="card-title">Quick Tips</h6>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTen"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample3"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li>Single patch.</li>
+                          <li>Quick showers allowed. No baths.</li>
+                          <li>USPS Prepaid/preaddressed return packaging provided.</li>
+                          <li>Device returns to iRhythm.</li>
+                          <li>Data is analyzed by iRhythm.</li>
+                          <li>Device can be mailed to patient's home.</li>
+                          <li>Gateway is used for data transmission.</li>
+                          <li>Device can be worn up to 14 days.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseEleven"
+                        aria-expanded="false"
+                        aria-controls="collapseEleven"
                       >
                         <h6 class="card-title">For Physicians</h6>
                       </button>
                     </h2>
                     <div
-                      id="collapseSeven"
-                      class="accordion-collapse collapse show"
-                      data-bs-parent="#accordionExample"
+                      id="collapseEleven"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample3"
                     >
                       <div class="accordion-body">
                         <h6 class="card-title">Epic Ordering Codes:</h6>
@@ -493,24 +615,26 @@
                       </div>
                     </div>
                   </div>
+                  
+                  <!-- item 3 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseEight"
+                        data-bs-target="#collapse12"
                         aria-expanded="false"
-                        aria-controls="collapseEight"
+                        aria-controls="collapse12"
                       >
                         <h6 class="card-title">For Technicians</h6>
                       </button>
                     </h2>
 
                     <div
-                      id="collapseEight"
+                      id="collapse12"
                       class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
+                      data-bs-parent="#accordionExample3"
                     >
                       <div class="accordion-body">
                         <a href="./zio-at-application.html"
@@ -527,6 +651,7 @@
               </div>
             </div>
           </div>
+
           <!-- MCOT container -->
           <div id="mcot" class="device mcot">
             <div class="card" style="width: 18rem">
@@ -539,7 +664,7 @@
               <div class="card-body">
                 <h5 class="card-title">MCT (Mobile Cardiac Telemetry)</h5>
                 <h6 class="card-title">Manufacturer: Biotel Heart</h6>
-                <h6 class="card-title">Quick Tips:</h6>
+                <!-- <h6 class="card-title">Quick Tips:</h6>
                 <ul>
                   <li>Multiple patches.</li>
                   <li>Quick showers allowed. No baths.</li>
@@ -549,26 +674,62 @@
                   <li>Device can be mailed to patient's home.</li>
                   <li>Cellphone is used for data transmission.</li>
                   <li>Device can be worn up to 30 days.</li>
-                </ul>
+                </ul> -->
                 <!-- Accordion -->
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="accordionExample4">
+                  <!-- item 1 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
                         class="accordion-button"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseNine"
+                        data-bs-target="#collapse13"
                         aria-expanded="true"
-                        aria-controls="collapseNine"
+                        aria-controls="collapse13"
                       >
                         <h6 class="card-title">For Physicians</h6>
                       </button>
                     </h2>
                     <div
-                      id="collapseNine"
+                      id="collapse13"
                       class="accordion-collapse collapse show"
-                      data-bs-parent="#accordionExample"
+                      data-bs-parent="#accordionExample4"
+                    >
+                      <div class="accordion-body">
+                       
+                        <ul>
+                          <li>Multiple patches.</li>
+                          <li>Quick showers allowed. No baths.</li>
+                          <li>UPS Prepaid/preaddressed return packaging provided.</li>
+                          <li>Device returns to Philips (Biotel Heart).</li>
+                          <li>Data is analyzed by Philips (Biotel Heart).</li>
+                          <li>Device can be mailed to patient's home.</li>
+                          <li>Cellphone is used for data transmission.</li>
+                          <li>Device can be worn up to 30 days.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- item 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse14"
+                        aria-expanded="false"
+                        aria-controls="collapse14"
+                      >
+                        <h6 class="card-title">For Physicians</h6>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse14"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample4"
                     >
                       <div class="accordion-body">
                         <h6 class="card-title">Epic Ordering Codes:</h6>
@@ -584,23 +745,25 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- item 3 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
                         class="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseTen"
+                        data-bs-target="#collapse15"
                         aria-expanded="false"
-                        aria-controls="collapseTen"
+                        aria-controls="collapse15"
                       >
                         <h6 class="card-title">For Technicians</h6>
                       </button>
                     </h2>
                     <div
-                      id="collapseTen"
+                      id="collapse15"
                       class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
+                      data-bs-parent="#accordionExample4"
                     >
                       <div class="accordion-body">
                         <a href="./mct-application.html"
