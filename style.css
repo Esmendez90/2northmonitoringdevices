@@ -92,6 +92,7 @@ iframe {
   position: absolute;
   top: 1px;
   z-index: 1;
+  width: 100%;
   background-color: red;
   color: white;
   font-size: 13px;
