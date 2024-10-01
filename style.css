@@ -109,6 +109,23 @@ iframe {
   transition: all 0.5s ease-in-out;
 }
 
+.lanyard{
+  text-decoration: underline;
+  color: blue;
+}
+.lanyard:hover {
+  cursor: pointer;
+  position: relative;
+}
+.lanyard:hover:after {
+  position: absolute;
+  content: url(./images/lanyard.gif);
+  left: -170px;
+  display: block;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-brand {
     width: 7%;
