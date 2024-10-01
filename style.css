@@ -53,10 +53,12 @@ h2 {
 .recorder-img-container {
   width: 40%;
   margin: 2rem auto;
+  border-radius: 5px;
 }
 .recorder-img-container img,
 .lead-placement-img-container img {
   width: 100%;
+  border-radius: 5px;
 }
 .program-monitor-instr-page h5,
 .apply-monitor-instr-page h5,
@@ -98,6 +100,15 @@ iframe {
   font-size: 13px;
   padding: 10px;
 }
+
+.display-element {
+  opacity: 0;
+}
+.is-in-viewport {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-brand {
     width: 7%;
