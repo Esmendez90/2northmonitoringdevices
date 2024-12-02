@@ -142,8 +142,8 @@ tbody tr:hover {
   position: absolute;
   top: 0;
   left: 0px;
-  background: green;
-  color: white;
+  background: yellow;
+  color: black;
   font-weight: bold;
   padding: 1px 5px;
   border-radius: 5px;
@@ -190,6 +190,7 @@ iframe {
   position: relative;
 }
 .alert {
+  display: none;
   position: absolute;
   top: 1px;
   z-index: 1;
