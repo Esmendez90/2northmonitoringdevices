@@ -41,6 +41,7 @@
               <a class="nav-link active" aria-current="page" href="./">Home</a>
             </li>
 
+            <!-- Devices Menu -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -49,7 +50,35 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Holter Monitor
+                Devices
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#holter">Holter Monitor</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#zio">Zio</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#epatch">Epatch</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#zioat">Zio AT</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#mcot">MCT</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Technicians Menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Technicians
               </a>
               <ul class="dropdown-menu">
                 <li>
@@ -70,75 +99,49 @@
                   <a
                     class="dropdown-item"
                     href="./how-to-import-holter-data.html"
-                    >How to import Holter data</a
+                    >How to import data from a Holter monitor</a
                   >
                 </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#zio"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Zio</a
-              >
-              <ul class="dropdown-menu dropdown-menu-4">
                 <li>
                   <a class="dropdown-item" href="./zio-application.html"
-                    >Zio Patch Application Instructions</a
+                    >Zio Patch application instructions</a
                   >
                 </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#epatch"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >E-Patch</a
-              >
-              <ul class="dropdown-menu dropdown-menu-3">
+
                 <li>
                   <a class="dropdown-item" href="./epatch-application.html"
-                    >E-Patch Application Instructions</a
+                    >ePatch application instructions</a
                   >
                 </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#zio"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Zio AT</a
-              >
-              <ul class="dropdown-menu dropdown-menu-2">
+
                 <li>
                   <a class="dropdown-item" href="./zio-at-application.html"
-                    >Zio AT Application Instructions</a
+                    >Zio AT application instructions</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="./mct-application.html"
+                    >MCT application instructions</a
                   >
                 </li>
               </ul>
             </li>
+
+            <!-- Providers Menu -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#mcot"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >MCT</a
               >
-              <ul class="dropdown-menu dropdown-menu-5">
+                Providers
+              </a>
+              <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./mct-application.html"
-                    >MCT Application Instructions</a
+                  <a class="dropdown-item" href="./orders.html"
+                    >How to enter an order in Epic</a
                   >
                 </li>
               </ul>
@@ -165,75 +168,76 @@
 
     <!-- Main content -->
     <main class="main">
-
       <!-- Comparison Chart -->
-     <div class="overview-icon-container">
-      <div class="overview-icon">
-        <img src="./images/table-icon.jpg" style="width:100%;border-radius: 5px;" />
-      </div>
-      <div class="overview-container">
-        <h2>Overview</h2>
-        <div class="table-container">
-          <table id="comparison-table">
-            <thead>
-              <tr>
-                <th>Device</th>
-                <th>Wear Time</th>
-                <th>Patches/Leads</th>
-                <th>Water-Resistant</th>
-                <th>Data Transmission</th>
-                <th>Reporting Type</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Holter Monitor</td>
-                <td>24-48 hours</td>
-                <td>5 leads</td>
-                <td>No</td>
-                <td>In-clinic analysis</td>
-                <td>Immediate, read in-clinic</td>
-              </tr>
-              <tr>
-                <td>Zio Patch</td>
-                <td>Up to 14 days</td>
-                <td>Single patch</td>
-                <td>Yes, showers</td>
-                <td>After wear period</td>
-                <td>Easy, summary on 1st page</td>
-              </tr>
-              <tr>
-                <td>E-Patch</td>
-                <td>Up to 14 days</td>
-                <td>Multiple patches</td>
-                <td>Yes/No with Flex adapter</td>
-                <td>After wear period</td>
-                <td>Standard reports</td>
-              </tr>
+      <div class="overview-icon-container">
+        <div class="overview-icon">
+          <img
+            src="./images/table-icon.jpg"
+            style="width: 100%; border-radius: 5px"
+          />
+        </div>
+        <div class="overview-container">
+          <h2>Overview</h2>
+          <div class="table-container">
+            <table id="comparison-table">
+              <thead>
+                <tr>
+                  <th>Device</th>
+                  <th>Wear Time</th>
+                  <th>Patches/Leads</th>
+                  <th>Water-Resistant</th>
+                  <th>Data Transmission</th>
+                  <th>Reporting Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Holter Monitor</td>
+                  <td>24-48 hours</td>
+                  <td>5 leads</td>
+                  <td>No</td>
+                  <td>In-clinic analysis</td>
+                  <td>Immediate, read in-clinic</td>
+                </tr>
+                <tr>
+                  <td>Zio Patch</td>
+                  <td>Up to 14 days</td>
+                  <td>Single patch</td>
+                  <td>Yes, showers</td>
+                  <td>After wear period</td>
+                  <td>Easy, summary on 1st page</td>
+                </tr>
+                <tr>
+                  <td>E-Patch</td>
+                  <td>Up to 14 days</td>
+                  <td>Multiple patches</td>
+                  <td>Yes/No with Flex adapter</td>
+                  <td>After wear period</td>
+                  <td>Standard reports</td>
+                </tr>
 
-              <tr>
-                <td>Zio AT</td>
-                <td>Up to 14 days</td>
-                <td>Single patch</td>
-                <td>Yes, showers</td>
-                <td>Periodic transmission</td>
-                <td>Easy, summary on 1st page</td>
-              </tr>
-              <tr>
-                <td>MCT Monitor</td>
-                <td>Up to 30 days</td>
-                <td>Multiple/3-lead</td>
-                <td>Yes/No with 3-lead lanyard</td>
-                <td>Periodic transmission</td>
-                <td>Standard reports</td>
-              </tr>
-            </tbody>
-          </table>
+                <tr>
+                  <td>Zio AT</td>
+                  <td>Up to 14 days</td>
+                  <td>Single patch</td>
+                  <td>Yes, showers</td>
+                  <td>Periodic transmission</td>
+                  <td>Easy, summary on 1st page</td>
+                </tr>
+                <tr>
+                  <td>MCT Monitor</td>
+                  <td>Up to 30 days</td>
+                  <td>Multiple/3-lead</td>
+                  <td>Yes/No with 3-lead lanyard</td>
+                  <td>Periodic transmission</td>
+                  <td>Standard reports</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-     </div>
       <!-- End of Comparison Chart -->
-
 
       <div class="container">
         <!-- Traditional Holter Container -->
