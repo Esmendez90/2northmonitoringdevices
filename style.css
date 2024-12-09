@@ -142,7 +142,7 @@ tbody tr:hover {
   position: absolute;
   top: 0;
   left: 0px;
-  background: yellow;
+  background: rgb(110, 250, 110);
   color: black;
   font-weight: bold;
   padding: 1px 5px;
